@@ -1,0 +1,12 @@
+#form-usuario-item input[type=number]::-webkit-inner-spin-button, 
+#form-usuario-item input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#form-usuario-item input[type=number] { -moz-appearance:textfield; }
+
+.bg-morado {
+  background-color: #6d1f6d !important;
+  color: #ffff;
+}
