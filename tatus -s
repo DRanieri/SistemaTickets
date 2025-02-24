@@ -1,0 +1,1378 @@
+[1mdiff --git a/.editorconfig b/.editorconfig[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mindex 269044e..734846d[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -29,3 +29,8 @@[m [muser_guide_src/cilexer/pycilexer.egg-info/*[m
+ *.sublime-project[m
+ /tests/tests/[m
+ /tests/results/[m
+[32m+[m
+[32m+[m[32m# Elastic Beanstalk Files[m
+[32m+[m[32m.elasticbeanstalk/*[m
+[32m+[m[32m!.elasticbeanstalk/*.cfg.yml[m
+[32m+[m[32m!.elasticbeanstalk/*.global.yml[m
+[1mdiff --git a/.htaccess b/.htaccess[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/.htaccess b/application/.htaccess[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/cache/index.html b/application/cache/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/autoload.php b/application/config/autoload.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/config.php b/application/config/config.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/constants.php b/application/config/constants.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/database.php b/application/config/database.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/doctypes.php b/application/config/doctypes.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/foreign_chars.php b/application/config/foreign_chars.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/hooks.php b/application/config/hooks.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/index.html b/application/config/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/memcached.php b/application/config/memcached.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/migration.php b/application/config/migration.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/mimes.php b/application/config/mimes.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/profiler.php b/application/config/profiler.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/routes.php b/application/config/routes.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/smileys.php b/application/config/smileys.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/config/user_agents.php b/application/config/user_agents.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/controllers/Login.php b/application/controllers/Login.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/controllers/admin/Dashboard.php b/application/controllers/admin/Dashboard.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/controllers/admin/Reporte.php b/application/controllers/admin/Reporte.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/controllers/admin/Ticket.php b/application/controllers/admin/Ticket.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/controllers/admin/Usuario.php b/application/controllers/admin/Usuario.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/controllers/index.html b/application/controllers/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/controllers/usuario/Dashboard.php b/application/controllers/usuario/Dashboard.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/controllers/usuario/Ticket.php b/application/controllers/usuario/Ticket.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/core/index.html b/application/core/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/helpers/index.html b/application/helpers/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/hooks/index.html b/application/hooks/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/index.html b/application/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/english/index.html b/application/language/english/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/index.html b/application/language/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/README.md b/application/language/spanish/README.md[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/calendar_lang.php b/application/language/spanish/calendar_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/date_lang.php b/application/language/spanish/date_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/db_lang.php b/application/language/spanish/db_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/email_lang.php b/application/language/spanish/email_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/form_validation_lang.php b/application/language/spanish/form_validation_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/ftp_lang.php b/application/language/spanish/ftp_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/imglib_lang.php b/application/language/spanish/imglib_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/migration_lang.php b/application/language/spanish/migration_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/number_lang.php b/application/language/spanish/number_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/pagination_lang.php b/application/language/spanish/pagination_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/profiler_lang.php b/application/language/spanish/profiler_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/unit_test_lang.php b/application/language/spanish/unit_test_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/language/spanish/upload_lang.php b/application/language/spanish/upload_lang.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/libraries/index.html b/application/libraries/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/logs/index.html b/application/logs/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/models/Config_ml.php b/application/models/Config_ml.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/models/Ticket_ml.php b/application/models/Ticket_ml.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/models/Usuario_ml.php b/application/models/Usuario_ml.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/models/index.html b/application/models/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/third_party/index.html b/application/third_party/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/reportes/index_view.php b/application/views/admin/reportes/index_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/reportes/search_view.php b/application/views/admin/reportes/search_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/template/aside_view.php b/application/views/admin/template/aside_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/template/content_view.php b/application/views/admin/template/content_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/template/footer_view.php b/application/views/admin/template/footer_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/template/header_view.php b/application/views/admin/template/header_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/template/perfil_view.php b/application/views/admin/template/perfil_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/tickets/asignado_view.php b/application/views/admin/tickets/asignado_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/tickets/cerrado_view.php b/application/views/admin/tickets/cerrado_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/tickets/closet_view.php b/application/views/admin/tickets/closet_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/tickets/create_view.php b/application/views/admin/tickets/create_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/tickets/edit_view.php b/application/views/admin/tickets/edit_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/tickets/modal.php b/application/views/admin/tickets/modal.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/tickets/rechazado_view.php b/application/views/admin/tickets/rechazado_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/tickets/show_view.php b/application/views/admin/tickets/show_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/usuarios/create_view.php b/application/views/admin/usuarios/create_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/usuarios/edit_view.php b/application/views/admin/usuarios/edit_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/usuarios/index_view.php b/application/views/admin/usuarios/index_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/usuarios/modal.php b/application/views/admin/usuarios/modal.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/admin/usuarios/show_view.php b/application/views/admin/usuarios/show_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/cli/error_404.php b/application/views/errors/cli/error_404.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/cli/error_db.php b/application/views/errors/cli/error_db.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/cli/error_exception.php b/application/views/errors/cli/error_exception.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/cli/error_general.php b/application/views/errors/cli/error_general.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/cli/error_php.php b/application/views/errors/cli/error_php.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/cli/index.html b/application/views/errors/cli/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/html/error_404.php b/application/views/errors/html/error_404.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/html/error_db.php b/application/views/errors/html/error_db.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/html/error_exception.php b/application/views/errors/html/error_exception.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/html/error_general.php b/application/views/errors/html/error_general.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/html/error_php.php b/application/views/errors/html/error_php.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/html/index.html b/application/views/errors/html/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/errors/index.html b/application/views/errors/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/index.html b/application/views/index.html[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/lib/css_template.php b/application/views/lib/css_template.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/lib/js_dashboard_template.php b/application/views/lib/js_dashboard_template.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/lib/js_ticket.php b/application/views/lib/js_ticket.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/lib/js_usuario.php b/application/views/lib/js_usuario.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/login_view.php b/application/views/login_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/mensajes_flash.php b/application/views/mensajes_flash.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/template/aside_view.php b/application/views/usuario/template/aside_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/template/content_view.php b/application/views/usuario/template/content_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/template/footer_view.php b/application/views/usuario/template/footer_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/template/header_view.php b/application/views/usuario/template/header_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/tickets/asignado_view.php b/application/views/usuario/tickets/asignado_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/tickets/cerrado_view.php b/application/views/usuario/tickets/cerrado_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/tickets/create_view.php b/application/views/usuario/tickets/create_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/tickets/edit_view.php b/application/views/usuario/tickets/edit_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/tickets/modal.php b/application/views/usuario/tickets/modal.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/tickets/rechazado_view.php b/application/views/usuario/tickets/rechazado_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/application/views/usuario/tickets/show_view.php b/application/views/usuario/tickets/show_view.php[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/adminlte.css b/assets/css/adminlte.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/adminlte.css.map b/assets/css/adminlte.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/adminlte.min.css b/assets/css/adminlte.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/adminlte.min.css.map b/assets/css/adminlte.min.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.components.css b/assets/css/alt/adminlte.components.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.components.css.map b/assets/css/alt/adminlte.components.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.components.min.css b/assets/css/alt/adminlte.components.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.components.min.css.map b/assets/css/alt/adminlte.components.min.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.core.css b/assets/css/alt/adminlte.core.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.core.css.map b/assets/css/alt/adminlte.core.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.core.min.css b/assets/css/alt/adminlte.core.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.core.min.css.map b/assets/css/alt/adminlte.core.min.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.extra-components.css b/assets/css/alt/adminlte.extra-components.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.extra-components.css.map b/assets/css/alt/adminlte.extra-components.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.extra-components.min.css b/assets/css/alt/adminlte.extra-components.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.extra-components.min.css.map b/assets/css/alt/adminlte.extra-components.min.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.pages.css b/assets/css/alt/adminlte.pages.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.pages.css.map b/assets/css/alt/adminlte.pages.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.pages.min.css b/assets/css/alt/adminlte.pages.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.pages.min.css.map b/assets/css/alt/adminlte.pages.min.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.plugins.css b/assets/css/alt/adminlte.plugins.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.plugins.css.map b/assets/css/alt/adminlte.plugins.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.plugins.min.css b/assets/css/alt/adminlte.plugins.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/alt/adminlte.plugins.min.css.map b/assets/css/alt/adminlte.plugins.min.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/fullcalendar.css b/assets/css/fullcalendar.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/css/style.css b/assets/css/style.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/img/AdminLTELogo.png b/assets/img/AdminLTELogo.png[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/img/boxed-bg.jpg b/assets/img/boxed-bg.jpg[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/img/boxed-bg.png b/assets/img/boxed-bg.png[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/img/default.jpg b/assets/img/default.jpg[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/img/icons.png b/assets/img/icons.png[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/img/loading.gif b/assets/img/loading.gif[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/.eslintrc.json b/assets/js/.eslintrc.json[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/adminlte.js b/assets/js/adminlte.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/adminlte.js.map b/assets/js/adminlte.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/adminlte.min.js b/assets/js/adminlte.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/adminlte.min.js.map b/assets/js/adminlte.min.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/demo.js b/assets/js/demo.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/fullcalendar.min.js b/assets/js/fullcalendar.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/pages/dashboard.js b/assets/js/pages/dashboard.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/pages/dashboard2.js b/assets/js/pages/dashboard2.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/js/pages/dashboard3.js b/assets/js/pages/dashboard3.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/af.js b/assets/locale/af.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ar-dz.js b/assets/locale/ar-dz.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ar-kw.js b/assets/locale/ar-kw.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ar-ly.js b/assets/locale/ar-ly.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ar-ma.js b/assets/locale/ar-ma.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ar-sa.js b/assets/locale/ar-sa.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ar-tn.js b/assets/locale/ar-tn.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ar.js b/assets/locale/ar.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/bg.js b/assets/locale/bg.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/bs.js b/assets/locale/bs.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ca.js b/assets/locale/ca.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/cs.js b/assets/locale/cs.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/da.js b/assets/locale/da.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/de-at.js b/assets/locale/de-at.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/de-ch.js b/assets/locale/de-ch.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/de.js b/assets/locale/de.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/el.js b/assets/locale/el.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/en-au.js b/assets/locale/en-au.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/en-ca.js b/assets/locale/en-ca.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/en-gb.js b/assets/locale/en-gb.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/en-ie.js b/assets/locale/en-ie.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/en-nz.js b/assets/locale/en-nz.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/es-do.js b/assets/locale/es-do.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/es-us.js b/assets/locale/es-us.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/es.js b/assets/locale/es.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/et.js b/assets/locale/et.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/eu.js b/assets/locale/eu.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/fa.js b/assets/locale/fa.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/fi.js b/assets/locale/fi.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/fr-ca.js b/assets/locale/fr-ca.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/fr-ch.js b/assets/locale/fr-ch.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/fr.js b/assets/locale/fr.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/gl.js b/assets/locale/gl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/he.js b/assets/locale/he.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/hi.js b/assets/locale/hi.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/hr.js b/assets/locale/hr.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/hu.js b/assets/locale/hu.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/id.js b/assets/locale/id.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/is.js b/assets/locale/is.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/it.js b/assets/locale/it.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ja.js b/assets/locale/ja.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ka.js b/assets/locale/ka.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/kk.js b/assets/locale/kk.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ko.js b/assets/locale/ko.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/lb.js b/assets/locale/lb.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/lt.js b/assets/locale/lt.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/lv.js b/assets/locale/lv.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/mk.js b/assets/locale/mk.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ms-my.js b/assets/locale/ms-my.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ms.js b/assets/locale/ms.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/nb.js b/assets/locale/nb.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/nl-be.js b/assets/locale/nl-be.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/nl.js b/assets/locale/nl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/nn.js b/assets/locale/nn.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/pl.js b/assets/locale/pl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/pt-br.js b/assets/locale/pt-br.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/pt.js b/assets/locale/pt.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ro.js b/assets/locale/ro.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/ru.js b/assets/locale/ru.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/sk.js b/assets/locale/sk.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/sl.js b/assets/locale/sl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/sq.js b/assets/locale/sq.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/sr-cyrl.js b/assets/locale/sr-cyrl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/sr.js b/assets/locale/sr.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/sv.js b/assets/locale/sv.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/th.js b/assets/locale/th.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/tr.js b/assets/locale/tr.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/uk.js b/assets/locale/uk.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/vi.js b/assets/locale/vi.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/zh-cn.js b/assets/locale/zh-cn.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/locale/zh-tw.js b/assets/locale/zh-tw.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css b/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css.map b/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css b/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css.map b/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js b/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js.map b/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js b/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map b/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-datepicker/css/datepicker.css b/assets/plugins/bootstrap-datepicker/css/datepicker.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker-prev.js b/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker-prev.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js b/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-datepicker/less/datepicker.less b/assets/plugins/bootstrap-datepicker/less/datepicker.less[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-slider/bootstrap-slider.js b/assets/plugins/bootstrap-slider/bootstrap-slider.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-slider/bootstrap-slider.min.js b/assets/plugins/bootstrap-slider/bootstrap-slider.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-slider/css/bootstrap-slider.css b/assets/plugins/bootstrap-slider/css/bootstrap-slider.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-slider/css/bootstrap-slider.min.css b/assets/plugins/bootstrap-slider/css/bootstrap-slider.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-switch/css/bootstrap2/bootstrap-switch.css b/assets/plugins/bootstrap-switch/css/bootstrap2/bootstrap-switch.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-switch/css/bootstrap2/bootstrap-switch.min.css b/assets/plugins/bootstrap-switch/css/bootstrap2/bootstrap-switch.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-switch/css/bootstrap3/bootstrap-switch.css b/assets/plugins/bootstrap-switch/css/bootstrap3/bootstrap-switch.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css b/assets/plugins/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-switch/js/bootstrap-switch.js b/assets/plugins/bootstrap-switch/js/bootstrap-switch.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js b/assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap/js/bootstrap.bundle.js b/assets/plugins/bootstrap/js/bootstrap.bundle.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap/js/bootstrap.bundle.js.map b/assets/plugins/bootstrap/js/bootstrap.bundle.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap/js/bootstrap.bundle.min.js b/assets/plugins/bootstrap/js/bootstrap.bundle.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap/js/bootstrap.bundle.min.js.map b/assets/plugins/bootstrap/js/bootstrap.bundle.min.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap/js/bootstrap.js b/assets/plugins/bootstrap/js/bootstrap.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap/js/bootstrap.js.map b/assets/plugins/bootstrap/js/bootstrap.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap/js/bootstrap.min.js b/assets/plugins/bootstrap/js/bootstrap.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap/js/bootstrap.min.js.map b/assets/plugins/bootstrap/js/bootstrap.min.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.css b/assets/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css b/assets/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.js b/assets/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js b/assets/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-custom-file-input/bs-custom-file-input.js b/assets/plugins/bs-custom-file-input/bs-custom-file-input.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-custom-file-input/bs-custom-file-input.js.map b/assets/plugins/bs-custom-file-input/bs-custom-file-input.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js b/assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js.map b/assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-stepper/css/bs-stepper.css b/assets/plugins/bs-stepper/css/bs-stepper.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-stepper/css/bs-stepper.css.map b/assets/plugins/bs-stepper/css/bs-stepper.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-stepper/css/bs-stepper.min.css b/assets/plugins/bs-stepper/css/bs-stepper.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-stepper/css/bs-stepper.min.css.map b/assets/plugins/bs-stepper/css/bs-stepper.min.css.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-stepper/js/bs-stepper.js b/assets/plugins/bs-stepper/js/bs-stepper.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-stepper/js/bs-stepper.js.map b/assets/plugins/bs-stepper/js/bs-stepper.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-stepper/js/bs-stepper.min.js b/assets/plugins/bs-stepper/js/bs-stepper.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/bs-stepper/js/bs-stepper.min.js.map b/assets/plugins/bs-stepper/js/bs-stepper.min.js.map[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/chart.js/Chart.bundle.js b/assets/plugins/chart.js/Chart.bundle.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/chart.js/Chart.bundle.min.js b/assets/plugins/chart.js/Chart.bundle.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/chart.js/Chart.css b/assets/plugins/chart.js/Chart.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/chart.js/Chart.js b/assets/plugins/chart.js/Chart.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/chart.js/Chart.min.css b/assets/plugins/chart.js/Chart.min.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/chart.js/Chart.min.js b/assets/plugins/chart.js/Chart.min.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/comment/comment.js b/assets/plugins/codemirror/addon/comment/comment.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/comment/continuecomment.js b/assets/plugins/codemirror/addon/comment/continuecomment.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/dialog/dialog.css b/assets/plugins/codemirror/addon/dialog/dialog.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/dialog/dialog.js b/assets/plugins/codemirror/addon/dialog/dialog.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/display/autorefresh.js b/assets/plugins/codemirror/addon/display/autorefresh.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/display/fullscreen.css b/assets/plugins/codemirror/addon/display/fullscreen.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/display/fullscreen.js b/assets/plugins/codemirror/addon/display/fullscreen.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/display/panel.js b/assets/plugins/codemirror/addon/display/panel.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/display/placeholder.js b/assets/plugins/codemirror/addon/display/placeholder.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/display/rulers.js b/assets/plugins/codemirror/addon/display/rulers.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/edit/closebrackets.js b/assets/plugins/codemirror/addon/edit/closebrackets.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/edit/closetag.js b/assets/plugins/codemirror/addon/edit/closetag.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/edit/continuelist.js b/assets/plugins/codemirror/addon/edit/continuelist.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/edit/matchbrackets.js b/assets/plugins/codemirror/addon/edit/matchbrackets.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/edit/matchtags.js b/assets/plugins/codemirror/addon/edit/matchtags.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/edit/trailingspace.js b/assets/plugins/codemirror/addon/edit/trailingspace.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/fold/brace-fold.js b/assets/plugins/codemirror/addon/fold/brace-fold.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/fold/comment-fold.js b/assets/plugins/codemirror/addon/fold/comment-fold.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/fold/foldcode.js b/assets/plugins/codemirror/addon/fold/foldcode.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/fold/foldgutter.css b/assets/plugins/codemirror/addon/fold/foldgutter.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/fold/foldgutter.js b/assets/plugins/codemirror/addon/fold/foldgutter.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/fold/indent-fold.js b/assets/plugins/codemirror/addon/fold/indent-fold.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/fold/markdown-fold.js b/assets/plugins/codemirror/addon/fold/markdown-fold.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/fold/xml-fold.js b/assets/plugins/codemirror/addon/fold/xml-fold.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/hint/anyword-hint.js b/assets/plugins/codemirror/addon/hint/anyword-hint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/hint/css-hint.js b/assets/plugins/codemirror/addon/hint/css-hint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/hint/html-hint.js b/assets/plugins/codemirror/addon/hint/html-hint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/hint/javascript-hint.js b/assets/plugins/codemirror/addon/hint/javascript-hint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/hint/show-hint.css b/assets/plugins/codemirror/addon/hint/show-hint.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/hint/show-hint.js b/assets/plugins/codemirror/addon/hint/show-hint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/hint/sql-hint.js b/assets/plugins/codemirror/addon/hint/sql-hint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/hint/xml-hint.js b/assets/plugins/codemirror/addon/hint/xml-hint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/lint/coffeescript-lint.js b/assets/plugins/codemirror/addon/lint/coffeescript-lint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/lint/css-lint.js b/assets/plugins/codemirror/addon/lint/css-lint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/lint/html-lint.js b/assets/plugins/codemirror/addon/lint/html-lint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/lint/javascript-lint.js b/assets/plugins/codemirror/addon/lint/javascript-lint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/lint/json-lint.js b/assets/plugins/codemirror/addon/lint/json-lint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/lint/lint.css b/assets/plugins/codemirror/addon/lint/lint.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/lint/lint.js b/assets/plugins/codemirror/addon/lint/lint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/lint/yaml-lint.js b/assets/plugins/codemirror/addon/lint/yaml-lint.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/merge/merge.css b/assets/plugins/codemirror/addon/merge/merge.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/merge/merge.js b/assets/plugins/codemirror/addon/merge/merge.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/mode/loadmode.js b/assets/plugins/codemirror/addon/mode/loadmode.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/mode/multiplex.js b/assets/plugins/codemirror/addon/mode/multiplex.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/mode/multiplex_test.js b/assets/plugins/codemirror/addon/mode/multiplex_test.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/mode/overlay.js b/assets/plugins/codemirror/addon/mode/overlay.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/mode/simple.js b/assets/plugins/codemirror/addon/mode/simple.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/runmode/colorize.js b/assets/plugins/codemirror/addon/runmode/colorize.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/runmode/runmode-standalone.js b/assets/plugins/codemirror/addon/runmode/runmode-standalone.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/runmode/runmode.js b/assets/plugins/codemirror/addon/runmode/runmode.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/runmode/runmode.node.js b/assets/plugins/codemirror/addon/runmode/runmode.node.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/scroll/annotatescrollbar.js b/assets/plugins/codemirror/addon/scroll/annotatescrollbar.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/scroll/scrollpastend.js b/assets/plugins/codemirror/addon/scroll/scrollpastend.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/scroll/simplescrollbars.css b/assets/plugins/codemirror/addon/scroll/simplescrollbars.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/scroll/simplescrollbars.js b/assets/plugins/codemirror/addon/scroll/simplescrollbars.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/search/jump-to-line.js b/assets/plugins/codemirror/addon/search/jump-to-line.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/search/match-highlighter.js b/assets/plugins/codemirror/addon/search/match-highlighter.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/search/matchesonscrollbar.css b/assets/plugins/codemirror/addon/search/matchesonscrollbar.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/search/matchesonscrollbar.js b/assets/plugins/codemirror/addon/search/matchesonscrollbar.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/search/search.js b/assets/plugins/codemirror/addon/search/search.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/search/searchcursor.js b/assets/plugins/codemirror/addon/search/searchcursor.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/selection/active-line.js b/assets/plugins/codemirror/addon/selection/active-line.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/selection/mark-selection.js b/assets/plugins/codemirror/addon/selection/mark-selection.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/selection/selection-pointer.js b/assets/plugins/codemirror/addon/selection/selection-pointer.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/tern/tern.css b/assets/plugins/codemirror/addon/tern/tern.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/tern/tern.js b/assets/plugins/codemirror/addon/tern/tern.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/tern/worker.js b/assets/plugins/codemirror/addon/tern/worker.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/addon/wrap/hardwrap.js b/assets/plugins/codemirror/addon/wrap/hardwrap.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/codemirror.css b/assets/plugins/codemirror/codemirror.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/codemirror.js b/assets/plugins/codemirror/codemirror.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/keymap/emacs.js b/assets/plugins/codemirror/keymap/emacs.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/keymap/sublime.js b/assets/plugins/codemirror/keymap/sublime.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/keymap/vim.js b/assets/plugins/codemirror/keymap/vim.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/apl/apl.js b/assets/plugins/codemirror/mode/apl/apl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/asciiarmor/asciiarmor.js b/assets/plugins/codemirror/mode/asciiarmor/asciiarmor.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/asn.1/asn.1.js b/assets/plugins/codemirror/mode/asn.1/asn.1.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/asterisk/asterisk.js b/assets/plugins/codemirror/mode/asterisk/asterisk.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/brainfuck/brainfuck.js b/assets/plugins/codemirror/mode/brainfuck/brainfuck.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/clike/clike.js b/assets/plugins/codemirror/mode/clike/clike.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/clojure/clojure.js b/assets/plugins/codemirror/mode/clojure/clojure.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/cmake/cmake.js b/assets/plugins/codemirror/mode/cmake/cmake.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/cobol/cobol.js b/assets/plugins/codemirror/mode/cobol/cobol.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/coffeescript/coffeescript.js b/assets/plugins/codemirror/mode/coffeescript/coffeescript.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/commonlisp/commonlisp.js b/assets/plugins/codemirror/mode/commonlisp/commonlisp.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/crystal/crystal.js b/assets/plugins/codemirror/mode/crystal/crystal.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/css/css.js b/assets/plugins/codemirror/mode/css/css.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/cypher/cypher.js b/assets/plugins/codemirror/mode/cypher/cypher.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/d/d.js b/assets/plugins/codemirror/mode/d/d.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/dart/dart.js b/assets/plugins/codemirror/mode/dart/dart.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/diff/diff.js b/assets/plugins/codemirror/mode/diff/diff.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/django/django.js b/assets/plugins/codemirror/mode/django/django.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/dockerfile/dockerfile.js b/assets/plugins/codemirror/mode/dockerfile/dockerfile.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/dtd/dtd.js b/assets/plugins/codemirror/mode/dtd/dtd.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/dylan/dylan.js b/assets/plugins/codemirror/mode/dylan/dylan.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/ebnf/ebnf.js b/assets/plugins/codemirror/mode/ebnf/ebnf.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/ecl/ecl.js b/assets/plugins/codemirror/mode/ecl/ecl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/eiffel/eiffel.js b/assets/plugins/codemirror/mode/eiffel/eiffel.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/elm/elm.js b/assets/plugins/codemirror/mode/elm/elm.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/erlang/erlang.js b/assets/plugins/codemirror/mode/erlang/erlang.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/factor/factor.js b/assets/plugins/codemirror/mode/factor/factor.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/fcl/fcl.js b/assets/plugins/codemirror/mode/fcl/fcl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/forth/forth.js b/assets/plugins/codemirror/mode/forth/forth.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/fortran/fortran.js b/assets/plugins/codemirror/mode/fortran/fortran.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/gas/gas.js b/assets/plugins/codemirror/mode/gas/gas.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/gfm/gfm.js b/assets/plugins/codemirror/mode/gfm/gfm.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/gherkin/gherkin.js b/assets/plugins/codemirror/mode/gherkin/gherkin.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/go/go.js b/assets/plugins/codemirror/mode/go/go.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/groovy/groovy.js b/assets/plugins/codemirror/mode/groovy/groovy.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/haml/haml.js b/assets/plugins/codemirror/mode/haml/haml.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/handlebars/handlebars.js b/assets/plugins/codemirror/mode/handlebars/handlebars.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/haskell-literate/haskell-literate.js b/assets/plugins/codemirror/mode/haskell-literate/haskell-literate.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/haskell/haskell.js b/assets/plugins/codemirror/mode/haskell/haskell.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/haxe/haxe.js b/assets/plugins/codemirror/mode/haxe/haxe.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/htmlembedded/htmlembedded.js b/assets/plugins/codemirror/mode/htmlembedded/htmlembedded.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/htmlmixed/htmlmixed.js b/assets/plugins/codemirror/mode/htmlmixed/htmlmixed.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/http/http.js b/assets/plugins/codemirror/mode/http/http.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/idl/idl.js b/assets/plugins/codemirror/mode/idl/idl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/javascript/javascript.js b/assets/plugins/codemirror/mode/javascript/javascript.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/jinja2/jinja2.js b/assets/plugins/codemirror/mode/jinja2/jinja2.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/jsx/jsx.js b/assets/plugins/codemirror/mode/jsx/jsx.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/julia/julia.js b/assets/plugins/codemirror/mode/julia/julia.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/livescript/livescript.js b/assets/plugins/codemirror/mode/livescript/livescript.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/lua/lua.js b/assets/plugins/codemirror/mode/lua/lua.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/markdown/markdown.js b/assets/plugins/codemirror/mode/markdown/markdown.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/mathematica/mathematica.js b/assets/plugins/codemirror/mode/mathematica/mathematica.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/mbox/mbox.js b/assets/plugins/codemirror/mode/mbox/mbox.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/meta.js b/assets/plugins/codemirror/mode/meta.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/mirc/mirc.js b/assets/plugins/codemirror/mode/mirc/mirc.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/mllike/mllike.js b/assets/plugins/codemirror/mode/mllike/mllike.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/modelica/modelica.js b/assets/plugins/codemirror/mode/modelica/modelica.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/mscgen/mscgen.js b/assets/plugins/codemirror/mode/mscgen/mscgen.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/mumps/mumps.js b/assets/plugins/codemirror/mode/mumps/mumps.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/nginx/nginx.js b/assets/plugins/codemirror/mode/nginx/nginx.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/nsis/nsis.js b/assets/plugins/codemirror/mode/nsis/nsis.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/ntriples/ntriples.js b/assets/plugins/codemirror/mode/ntriples/ntriples.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/octave/octave.js b/assets/plugins/codemirror/mode/octave/octave.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/oz/oz.js b/assets/plugins/codemirror/mode/oz/oz.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/pascal/pascal.js b/assets/plugins/codemirror/mode/pascal/pascal.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/pegjs/pegjs.js b/assets/plugins/codemirror/mode/pegjs/pegjs.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/perl/perl.js b/assets/plugins/codemirror/mode/perl/perl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/php/php.js b/assets/plugins/codemirror/mode/php/php.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/pig/pig.js b/assets/plugins/codemirror/mode/pig/pig.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/powershell/powershell.js b/assets/plugins/codemirror/mode/powershell/powershell.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/properties/properties.js b/assets/plugins/codemirror/mode/properties/properties.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/protobuf/protobuf.js b/assets/plugins/codemirror/mode/protobuf/protobuf.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/pug/pug.js b/assets/plugins/codemirror/mode/pug/pug.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/puppet/puppet.js b/assets/plugins/codemirror/mode/puppet/puppet.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/python/python.js b/assets/plugins/codemirror/mode/python/python.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/q/q.js b/assets/plugins/codemirror/mode/q/q.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/r/r.js b/assets/plugins/codemirror/mode/r/r.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/rpm/rpm.js b/assets/plugins/codemirror/mode/rpm/rpm.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/rst/rst.js b/assets/plugins/codemirror/mode/rst/rst.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/ruby/ruby.js b/assets/plugins/codemirror/mode/ruby/ruby.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/rust/rust.js b/assets/plugins/codemirror/mode/rust/rust.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/sas/sas.js b/assets/plugins/codemirror/mode/sas/sas.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/sass/sass.js b/assets/plugins/codemirror/mode/sass/sass.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/scheme/scheme.js b/assets/plugins/codemirror/mode/scheme/scheme.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/shell/shell.js b/assets/plugins/codemirror/mode/shell/shell.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/sieve/sieve.js b/assets/plugins/codemirror/mode/sieve/sieve.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/slim/slim.js b/assets/plugins/codemirror/mode/slim/slim.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/smalltalk/smalltalk.js b/assets/plugins/codemirror/mode/smalltalk/smalltalk.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/smarty/smarty.js b/assets/plugins/codemirror/mode/smarty/smarty.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/solr/solr.js b/assets/plugins/codemirror/mode/solr/solr.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/soy/soy.js b/assets/plugins/codemirror/mode/soy/soy.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/sparql/sparql.js b/assets/plugins/codemirror/mode/sparql/sparql.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/spreadsheet/spreadsheet.js b/assets/plugins/codemirror/mode/spreadsheet/spreadsheet.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/sql/sql.js b/assets/plugins/codemirror/mode/sql/sql.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/stex/stex.js b/assets/plugins/codemirror/mode/stex/stex.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/stylus/stylus.js b/assets/plugins/codemirror/mode/stylus/stylus.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/swift/swift.js b/assets/plugins/codemirror/mode/swift/swift.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/tcl/tcl.js b/assets/plugins/codemirror/mode/tcl/tcl.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/textile/textile.js b/assets/plugins/codemirror/mode/textile/textile.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/tiddlywiki/tiddlywiki.css b/assets/plugins/codemirror/mode/tiddlywiki/tiddlywiki.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/tiddlywiki/tiddlywiki.js b/assets/plugins/codemirror/mode/tiddlywiki/tiddlywiki.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/tiki/tiki.css b/assets/plugins/codemirror/mode/tiki/tiki.css[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/tiki/tiki.js b/assets/plugins/codemirror/mode/tiki/tiki.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/toml/toml.js b/assets/plugins/codemirror/mode/toml/toml.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/tornado/tornado.js b/assets/plugins/codemirror/mode/tornado/tornado.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/troff/troff.js b/assets/plugins/codemirror/mode/troff/troff.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/ttcn-cfg/ttcn-cfg.js b/assets/plugins/codemirror/mode/ttcn-cfg/ttcn-cfg.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/ttcn/ttcn.js b/assets/plugins/codemirror/mode/ttcn/ttcn.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/turtle/turtle.js b/assets/plugins/codemirror/mode/turtle/turtle.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/twig/twig.js b/assets/plugins/codemirror/mode/twig/twig.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codemirror/mode/vb/vb.js b/assets/plugins/codemirror/mode/vb/vb.js[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/assets/plugins/codem
